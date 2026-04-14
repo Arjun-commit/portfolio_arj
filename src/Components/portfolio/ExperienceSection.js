@@ -6,6 +6,18 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card.js";
 const experiences = [
   {
     company: "Alchromist LLC",
+    role: "Machine Learning Engineer",
+    icon: ChartNetwork,
+    achievements: [
+      "Engineered production computer vision pipelines for color science calibration and skin-tone detection using PyTorch and CNNs, improving fairness metrics across demographic segments by 30% demonstrating bias-aware modeling directly transferable to credit and lending risk systems.",
+      "Deployed production models with drift detection, model monitoring, and SHAP-based explainability, establishing regulatory-grade audit trails aligned with financial compliance and Responsible AI standards.",
+      "Architected scalable feature extraction pipelines on high-dimensional image data via FastAPI microservices, applying pattern-recognition techniques that generalize to fraud detection and alternative-data risk modeling."
+
+    ],
+    color: "red"
+  },
+  {
+    company: "Alchromist LLC",
     role: "Data Scientist Intern",
     icon: ChartNetwork,
     achievements: [

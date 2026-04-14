@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   const [text, setText] = useState("");
-  const fullText = "Data Scientist & AI Researcher";
+  const fullText = "Machine Learning Engineer";
   
   useEffect(() => {
     let index = 0;
@@ -77,7 +77,8 @@ export default function HeroSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
             className="max-w-4xl mx-auto text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-12"
-          >Data Scientist passionate about developing machine learning systems that enhance user experience and product intelligence. Experienced in <span className="font-semibold text-blue-600 dark:text-cyan-400">deep learning</span>, experimentation, and scalable <span className="font-semibold text-blue-600 dark:text-cyan-400">ML pipeline design</span>, with strong foundations in applied research, privacy focused data science, and cross-functional collaboration.
+          >Machine Learning Engineer building production AI systems where it counts from computer vision pipelines that detect bias in real time, to <span className="font-semibold text-blue-600 dark:text-cyan-400">multi-agent GenAI advisors </span> that ground every answer in real data, to behavioral <span className="font-semibold text-blue-600 dark:text-cyan-400">fraud detection engines </span> that catch scams transaction models miss. M.S. Data Science from the University of Arizona, currently shipping ML at Alchromist LLC. I care about three things: models that work in production, explanations regulators can defend, and decisions that hold up when money is on the line.
+          
           </motion.p>
 
           <motion.div

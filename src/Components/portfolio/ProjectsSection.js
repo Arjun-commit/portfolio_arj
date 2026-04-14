@@ -6,6 +6,29 @@ import { Badge } from "./ui/badge.js";
 
 const projects = [
   {
+    icon: Lock,
+    title: "All-Green Fraud Detection - Behavioral Social-Engineering Fraud Platform",
+    description: "Behavioral fraud detection for social-engineering (all-green) attacks - the kind where the transaction looks perfectly legitimate on paper because the real customer is on their own device, passed 2FA, and is being coached by a scammer on the phone.",
+    technologies: ["PyTorch", "XGBoost", "SHAP", "Kafka", "FastAPI", "PostgreSQL"],
+    highlights: [
+      "Engineered real-time fraud scoring engine combining a 2-layer LSTM with attention on behavioral biometrics (mouse dynamics, keystroke cadence, dwell time) with an XGBoost transaction-context model, achieving >0.85 AUC and <50ms p99 latency.",
+      "Added SHAP explainability, a graduated friction engine (awareness prompt → cooling timer → callback), Kafka event streaming, and demographic fairness testing for regulator-ready defensibility."
+
+    ],
+    gradient: "from-purple-500 to-green-500"
+  },
+  {
+    icon: Code2,
+    title: "Fin-Flow - Autonomous CFO-AI Agent",
+    description: "An autonomous financial agent system that ingests bank data, categorizes expenses, forecasts cash flow, and answers strategic questions with citations.",
+    technologies: ["Python", "LangChain", "LangGraph", "Gemini", "ChromaDB", "Prophet", "FastAPI"],
+    highlights: [
+      "Architected multi-agent GenAI system (Categorizer, Forecaster, Advisor) delivering RAG-grounded financial Q&A, Prophet-based cash-flow forecasting, and IRS Schedule-C tax categorization across 18 categories with pluggable LLM/rules backends and graceful fallbacks",
+      "Enforced fintech-grade reliability via a PII-masking pipeline before LLM calls, a citation contract guaranteeing zero hallucinated transaction IDs, and a test suite validating grounded answers on real transaction data"
+    ],
+    gradient: "from-blue-500 to-red-500"
+  },
+  {
     icon: Network,
     title: "NLP Sentiment Analysis and Prediction Model ",
     description: "This project developed a robust NLP sentiment analysis and prediction model using Python, TensorFlow, and DistilRoBERTa to improve multi-label classification F1-score by 15% over baseline models while reducing overfitting across multiple sentiment categories.",

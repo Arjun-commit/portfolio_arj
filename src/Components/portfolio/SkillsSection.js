@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Code, Database, Cloud, BarChart, Brain, Users } from "lucide-react";
+import { Code, Database, Cloud, BarChart, Brain, Users, AirVent, AxeIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card.js";
 import { Badge } from './ui/badge';
+import { generatePath } from "react-router-dom";
 
 const skillCategories = [
   {
@@ -13,38 +14,77 @@ const skillCategories = [
   },
   {
     icon: Brain,
-    title: "Data Science & ML",
+    title: "ML & Deep Learning",
     skills: [
-      "Transformer Architectures",
-      "Deep Learning",
-      "NLP",
-      "PyTorch",
-      "TensorFlow",
-      "SVM",
-      "Random Forest",
-      "Feature Engineering",
-      "Predictive Modeling"
+      "PyTorch", 
+      "TensorFlow", 
+      "Scikit-learn", 
+      "XGBoost", 
+      "LSTM", 
+      "CNNs", 
+      "Transformers", 
+      "Hugging Face", 
+      "SHAP"
+    ],
+    color: "from-purple-500 to-pink-500"
+  },
+  {
+    icon: Badge,
+    title: "GenAI & LLMs",
+    skills: [
+      "LangChain", 
+      "LangGraph", 
+      "RAG", 
+      "Prompt Engineering", 
+      "Fine-Tuning (LoRA/PEFT)", 
+      "Vector DBs (Pinecone, ChromaDB)", 
+      "Llama3", 
+      "Mixtral", 
+      "Gemini"
+    ],
+    color: "from-purple-500 to-pink-500"
+  },
+  {
+    icon: Badge,
+    title: "Financial AI",
+    skills: [
+      "Fraud Detection", 
+      "Time-Series Forecasting (Prophet)", 
+      "Risk Scoring", 
+      "Behavioral Analytics", "Responsible AI", 
+      "PII/Compliance", 
+      "Drift Detection"
     ],
     color: "from-purple-500 to-pink-500"
   },
   {
     icon: Cloud,
-    title: "Cloud & DevOps",
-    skills: ["IBM Cloud", "AWS", "Kubernetes", "Docker", "Spark"],
+    title: "Data, MLOps & Cloud",
+    skills: ["FastAPI", 
+      "Kafka", 
+      "PostgreSQL", 
+      "Redis", 
+      "Docker", 
+      "ETL Pipelines", 
+      "MLflow", 
+      "AWS", 
+      "GCP", 
+      "Tableau", 
+      "Power BI"],
     color: "from-orange-500 to-red-500"
   },
-  {
-    icon: Database,
-    title: "Data Engineering",
-    skills: [
-      "Web Scraping",
-      "Data Wrangling",
-      "ELT Process",
-      "A/B Testing",
-      "Experimental Design"
-    ],
-    color: "from-green-500 to-teal-500"
-  },
+  // {
+  //   icon: Database,
+  //   title: "Data Engineering",
+  //   skills: [
+  //     "Web Scraping",
+  //     "Data Wrangling",
+  //     "ELT Process",
+  //     "A/B Testing",
+  //     "Experimental Design"
+  //   ],
+  //   color: "from-green-500 to-teal-500"
+  // },
   {
     icon: BarChart,
     title: "Visualization & BI",
